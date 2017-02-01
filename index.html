@@ -1,0 +1,93 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Home</title>
+<!--Inserting the google material design lite libraries -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Making the whole application responsive-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+  <!--Adding the login div-->
+  <div class="login-cover">
+    <!-- MDL Spinner Component -->
+    <div class="page-loader mdl-spinner mdl-js-spinner is-active"></div>
+  </div>
+
+  <!--Adding the navigation bar-->
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+         <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">!Forget</span>
+
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+               <!-- Colored raised button -->
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">SIGN OUT<i class="button-right-icon material-icons">account_circle</i></button>
+            </nav>
+         </div>
+      </header>
+      <div class="mdl-layout__drawer">
+         <span class="mdl-layout-title">!Forget</span>
+         <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Home</a>
+            <a class="mdl-navigation__link" href="">Favorites</a>
+            <a class="mdl-navigation__link" href="">Maps</a>
+            <a class="mdl-navigation__link" href="">Share</a>
+         </nav>
+      </div>
+      <main class="mdl-layout__content">
+         <div class="page-content">
+            <table class="welcome_screen">
+              <tr>
+                  <td><h4>Thanks for using our App</h4></td>
+              </tr>
+              <tr>
+                  <td><img class="centered_image" src="images/bg_logo1.jpg"/></td>
+              </tr>
+              <tr>
+                  <td>
+                    <!-- Colored raised button -->
+                    <button class="facebook-login mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                      Login with facebook
+                    </button>
+                </td>
+              <tr>
+                <td>
+                  <!-- Raised button -->
+                    <button class="google-login mdl-button mdl-js-button mdl-button--raised">
+                      Login with Google
+                    </button>
+              </td>
+              </tr>
+            </table>
+         </div>
+      </main>
+   </div>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC0ARdQHl77xz3IntFy2bk0xNbIKUwHIrU",
+    authDomain: "hybride-app.firebaseapp.com",
+    databaseURL: "https://hybride-app.firebaseio.com",
+    storageBucket: "hybride-app.appspot.com",
+    messagingSenderId: "750697015626"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="javascript/index.js"></script>
+<script src="javascript/jquery-3.1.1.min.js"></script>
+</body>
+</html>
